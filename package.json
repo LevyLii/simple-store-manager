@@ -1,0 +1,33 @@
+{
+  "name": "simple-store-manager",
+  "version": "1.0.0",
+  "description": "simple singleton data manager for various frameworks",
+  "keywords": [
+    "store",
+    "store-manager"
+  ],
+  "author": "LevyLii <782712046@163.com>",
+  "homepage": "",
+  "license": "MIT",
+  "main": "lib/index.js",
+  "source": "index.ts",
+  "directories": {
+    "lib": "lib"
+  },
+  "files": [
+    "lib",
+    "types"
+  ],
+  "types": "./types/index.d.ts",
+  "scripts": {
+    "dev": "yarn run dev:lib",
+    "dev:lib": "tsc --project ./tsconfig.build.json --watch --incremental",
+    "build": "yarn run build:lib",
+    "build:lib": "tsc --project ./tsconfig.build.json"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "@types/node": "^17.0.35",
+    "typescript": "^4.1.0"
+  }
+}
