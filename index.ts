@@ -11,14 +11,14 @@ export class Store {
         this.data = {}
     }
 
-    emit(value: Object) {
-        Object.assign(this.data, value)
-        this.emitter.emit('data', value)
+    emit(name: string, value: Object) {
+        Object.assign(this.data, {[name]: value})
+        this.emitter.emit('name', value)
     }
 
-    on(func: Function) {
-        this.emitter.on('data', () => {
-            func()
+    on(name: string, func: Function) {
+        this.emitter.on([name], (value) => {
+            func(value)
         })
     }
 

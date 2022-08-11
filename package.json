@@ -7,7 +7,7 @@
     "store-manager"
   ],
   "author": "LevyLii <782712046@163.com>",
-  "homepage": "",
+  "homepage": "https://github.com/LevyLii/simple-store-manager.git",
   "license": "MIT",
   "main": "lib/index.js",
   "source": "index.ts",
