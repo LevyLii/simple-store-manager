@@ -1,6 +1,6 @@
 {
   "name": "simple-store-manager",
-  "version": "1.0.0",
+  "version": "2.0.6",
   "description": "simple singleton data manager for various frameworks",
   "keywords": [
     "store",
